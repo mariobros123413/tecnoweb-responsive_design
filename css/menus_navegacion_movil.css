@@ -1,11 +1,7 @@
-/* Archivo: media_queries.css */
-
-/* Estilos generales */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    padding-bottom: 3em;
 }
 
 /* Estilos de la barra de navegación */
@@ -57,8 +53,7 @@ body {
 /* Estilos del contenedor */
 .container {
     padding: 20px;
-    text-align: center;
-    background-color: aqua;
+    text-align: center;  
 }
 
 .row {
@@ -74,15 +69,7 @@ body {
 img{
     width: 40%;
 }
-.footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #f8f9fa;
-    border-top: 1px solid #e9ecef;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
+
 @media (max-width: 768px) {
     .navbar .navbar-collapse {
         display: none;
@@ -106,19 +93,12 @@ img{
     }
 }
 
-/* Media Query para pantallas de hasta 700px */
-
-@media (min-width: 800px) {
-    .container {
-        background-color: #901c5a;
-        color: #fff;
-    }
-}
-
-@media (max-width: 700px) {
-    .container {
-        background-color: #2d577b;
-        color: #fff;
-        font-family: 'Lucida Sans';
-    }
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-top: 1px solid #e9ecef;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }

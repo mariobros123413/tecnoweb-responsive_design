@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menús de Navegación Móvil - Proyecto Responsive</title>
+    <link rel="stylesheet" href="./css/menus_navegacion_movil.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f8f9fa;
+            padding: 1rem;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .navbar-toggler {
+            display: none;
+            flex-direction: column;
+            cursor: pointer;
+        }
+
+        .navbar-toggler span {
+            height: 3px;
+            background: #333;
+            margin: 4px 0;
+            width: 25px;
+        }
+
+        .side-nav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: #111;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .side-nav a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .side-nav a:hover {
+            color: #f1f1f1;
+        }
+
+        .side-nav .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+        }
+
+        @media (max-width: 768px) {
+            .navbar-toggler {
+                display: flex;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Proyecto Responsive</a>
+        <div class="navbar-toggler" onclick="openNav()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div id="mySidenav" class="side-nav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="media_queries.html">Media Queries</a>
+        <a href="fluid_grids_flexbox.html">Fluid Grids y Flexbox</a>
+        <a href="imagenes_responsivas.html">Imágenes Responsivas</a>
+        <a href="tipografia_adaptable.html">Tipografía Adaptable</a>
+        <a href="menus_navegacion_movil.html">Menús de Navegación Móvil</a>
+        <a href="touch_friendly_design.html">Touch-Friendly Design</a>
+    </div>
+
+    <div class="container">
+        <h2 class="text-center">Menús de Navegación Móvil</h2>
+        <p class="text-center">Ejemplo de menús de navegación móviles.</p>
+    </div>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 Proyecto Responsive. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+        }
+    </script>
+</body>
+</html>
