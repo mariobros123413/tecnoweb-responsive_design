@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries - Proyecto Responsive</title>
+    <link rel="stylesheet" href="./css/media_queries.css">
+
+</head>
+<body>
+    <nav class="navbar">
+        <a class="navbar-brand" href="index.html">Proyecto Responsive</a>
+        <button class="navbar-toggler" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" onclick="toggleMenu()">
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse" id="navbarNav">
+            <a class="nav-link" href="media_queries.html">Media Queries</a>
+            <a class="nav-link" href="fluid_grids_flexbox.html">Fluid Grids y Flexbox</a>
+            <a class="nav-link" href="imagenes_responsivas.html">Imágenes Responsivas</a>
+            <a class="nav-link" href="tipografia_adaptable.html">Tipografía Adaptable</a>
+            <a class="nav-link" href="menus_navegacion_movil.html">Menús de Navegación Móvil</a>
+            <a class="nav-link" href="touch_friendly_design.html">Touch-Friendly Design</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h2>Media Queries</h2>
+        <img src="./images/cat.jpeg" alt="Mi gato">
+        <p>Este es un ejemplo de cómo cambiar el fondo y el color del texto utilizando Media Queries en CSS.</p>
+    </div>
+
+    <footer class="footer">
+        &copy; 2024 Responsive Design. Todos los derechos reservados.
+    </footer>
+    <script>
+        function toggleMenu() {
+            const nav = document.getElementById('navbarNav');
+            nav.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
